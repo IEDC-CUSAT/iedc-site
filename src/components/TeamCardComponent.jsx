@@ -18,7 +18,7 @@ const TeamCardComponent = ({ imageSrc, name, role, linkedInURL }) => {
     >
       <Image
         src={imageSrc}
-        alt=""
+        alt={name}
         className="mt-8 size-52 rounded-full lg:size-[200px]"
       />
       <h3 className="mt-2 text-2xl font-bold md:text-3xl">{name}</h3>

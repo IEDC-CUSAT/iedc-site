@@ -7,14 +7,12 @@ import ProfileIcon2 from "../../public/images/icon2.png";
 import ProfileIcon3 from "../../public/images/icon3.png";
 
 const Vision = () => {
- 
   const dummyMissions = [
     {
       imageSrc: ProfileIcon1,
       heading: "Promoting Innovation",
       comment: "Our aim is to cultivate a setting where students feel empowered to explore new ideas freely and where innovation is not only endorsed but celebrated."
     },
-  
     {
       imageSrc: ProfileIcon2,
       heading: "Fostering Collaboration",
@@ -30,10 +28,10 @@ const Vision = () => {
   return (
     <div className="bg-[#E3FEF7] px-4 py-8">
       <h3 className="text-5xl font-bold text-center my-14 text-[#001D23]">VISION</h3>
-      <div className="grid w-full grid-cols-3 px-5 place-items-center" >
+      <div className="grid gap-8 place-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {dummyMissions.map((mission, index) => (
           <VisionCardComponent
-            key={index} // Use index as the key
+            key={index}
             imageSrc={mission.imageSrc}
             heading={mission.heading}
             comment={mission.comment}
