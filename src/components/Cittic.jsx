@@ -9,10 +9,14 @@ const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 function InfoText() {
   return (
     <div className="flex flex-col space-x-2 text-[#FFFFFF]">
-      <h1 className={`antialiased text-[40px] leading-[56px] ${saira.className}`}>
-        CITTIC Logo
+      <h1
+        className={`text-[40px] leading-[56px] antialiased ${saira.className}`}
+      >
+        CITTIC
       </h1>
-      <p className={`antialiased text-[16px] leading-[26px] ${poppins.className}`}>
+      <p
+        className={`text-[16px] leading-[26px] antialiased ${poppins.className}`}
+      >
         CITTIC CUSAT provides a springboard to budding entrepreneurs who wish to
         enter the world of technology-based business careers. Here, bright ideas
         can be developed into products or services using advanced technology
